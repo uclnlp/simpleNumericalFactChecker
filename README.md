@@ -1,4 +1,4 @@
-# simpleNumericalFactChecker
+# Simple Numerical Fact-Checker
 Fact checker for simple claims about statistical properties
 
 This repository contains the code and data needed to reproduce the results of the paper:
