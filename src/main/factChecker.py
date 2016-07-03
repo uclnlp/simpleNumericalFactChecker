@@ -103,6 +103,10 @@ print alias2region
 
 tsv = open(sys.argv[8], "wb")
 
+headers = ['sentence', 'region', 'kb_region', 'property', 'kb_value', 'mape_support_scaling_param', 'pattern', 'value', 'MAPE', 'source_JSON']
+
+tsv.write("\t".join(headers) + "\n")
+
 # Now go over each file
 for fileCounter, jsonFileName in enumerate(jsonFiles):
     #print "processing " + jsonFileName
