@@ -39,7 +39,7 @@ for country in allCountriesData:
 
 bingUrl = 'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Web' # ?Query=%27gates%27&$top=10&$format=json'
 #Provide your account key here
-accountKey = 'ZAk6G5VxGSD+K/mx3QH+PX24x85Cx9lEVnQzXA5H+P0'
+accountKey = 'XXX'
 accountKeyEnc = base64.b64encode(accountKey + ':' + accountKey)
 headers = {'Authorization': 'Basic ' + accountKeyEnc}
 
