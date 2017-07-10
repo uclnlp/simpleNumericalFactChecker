@@ -33,19 +33,25 @@ And then:
 
 - informedGuess: 
   
-  python src/main/fixedValuePredictor.py data/train.json data/theMatrixExtend120TokenFiltered_2_2_0.1_0.5_fixed2.json data/test.json out/informedGuess
+```python src/main/fixedValuePredictor.py data/train.json data/theMatrixExtend120TokenFiltered_2_2_0.1_0.5_fixed2.json data/test.json out/informedGuess```
 
 - unadjustedMAPE:
 
-  python src/main/baselinePredictor.py data/train.json data/theMatrixExtend120TokenFiltered_2_2_0.1_0.5_fixed2.json data/test.json out/unadjustedMAPE FALSE
+```python src/main/baselinePredictor.py data/train.json data/theMatrixExtend120TokenFiltered_2_2_0.1_0.5_fixed2.json data/test.json out/unadjustedMAPE FALSE```
 
 - adjustedMAPE:
 
-  python src/main/baselinePredictor.py data/train.json data/theMatrixExtend120TokenFiltered_2_2_0.1_0.5_fixed2.json data/test.json out/adjustedMAPE TRUE
+```python src/main/baselinePredictor.py data/train.json data/theMatrixExtend120TokenFiltered_2_2_0.1_0.5_fixed2.json data/test.json out/adjustedMAPE TRUE```
 
 To run the fact-checker on the HTML pages obtained from the web:
 
-  python src/main/factChecker.py data/allCountriesPost2010-2014Filtered15-150.json data/theMatrixExtend120TokenFiltered_2_2_0.1_0.5_fixed2.json population 0.03125 data/htmlPages2textPARSEDALL data/locationNames data/aliases.json out/population.tsv
+First create a directory for the output, i.e.:
+
+```mkdir out```
+
+Then run
+
+```python src/main/factChecker.py data/allCountriesPost2010-2014Filtered15-150.json data/theMatrixExtend120TokenFiltered_2_2_0.1_0.5_fixed2.json population 0.03125 data/htmlPages2textPARSEDALL data/locationNames data/aliases.json out/population.tsv```
 
 The directory data/htmlPages2textPARSEDALL is not on github due to its size (1.6GB compressed), but feel free to ask me for it.
 
